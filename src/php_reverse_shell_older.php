@@ -1,6 +1,6 @@
 <?php
 // Copyright (c) 2020 Ivan Šincek
-// v2.3
+// v2.4
 // Requires PHP v4.3.0 or greater.
 // Works on Linux OS, macOS, and Windows OS.
 // See the original script at https://github.com/pentestmonkey/php-reverse-shell.
